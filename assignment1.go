@@ -28,6 +28,8 @@ func main() {
 	if err == nil {
 		fmt.Println("Siswa nomor urut:", arg)
 		PrintStudent(studentLists[arg-1])
+	} else {
+		panic(err.Error())
 	}
 }
 
